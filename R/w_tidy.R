@@ -23,12 +23,12 @@
 #' w   <- gen_w(n)
 #' rownames(w) <- colnames(w) <- dat$obs_id
 #'
-#' w2 <- tidy_w(formula = ~x1,
+#' w2 <- w_tidy(formula = ~x1,
 #'              data    = dat,
 #'              id      = "obs_id",
 #'              w       = w)
 
-tidy_w <- function(formula, data, id, w){
+w_tidy <- function(formula, data, id, w){
   dat     <- model.frame(formula, data)
   bad_idx <- as.numeric(na.action(dat))
   bad_ids <- data[[id]][bad_idx]

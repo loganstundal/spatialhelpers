@@ -9,10 +9,10 @@
 #' @export
 #'
 #' @examples
-#' gen_w(20)
+#' w_gen(20)
 
 
-gen_w <- function(n, cutoff = 0.2){
+w_gen <- function(n, cutoff = 0.2){
   cords <- cbind(x = runif(n, -1, 1),
                  y = runif(n, -1, 1))
   w <- as.matrix(dist(cords))
