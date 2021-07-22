@@ -1,5 +1,3 @@
-#' w_data
-#'
 #' Construct a spatial weights matrix using observations in a data frame
 #'
 #' @description \code{w_data} constructs spatial weights using dyadic

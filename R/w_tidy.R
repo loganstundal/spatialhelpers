@@ -1,5 +1,3 @@
-#' w_tidy
-#'
 #' Tidy a pre-specified spatial weights matrix
 #'
 #' @description  This function tidies a pre-specified spatial weights matrix. Using a unique ID
@@ -8,7 +6,7 @@
 #'
 #' @param formula A model formula to identify appropriate observations for subsetting
 #' @param data A data frame containing variables to be used in a spatial model
-#' @param id A unique ID variable that correpsonds to row and column names in W
+#' @param id A unique ID variable that corresponds to row and column names in W
 #' @param w A spatial weights matrix containing observations that
 #' correspond to data rows with missing values
 #'

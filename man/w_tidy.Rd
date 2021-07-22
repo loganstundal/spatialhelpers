@@ -2,7 +2,7 @@
 % Please edit documentation in R/w_tidy.R
 \name{w_tidy}
 \alias{w_tidy}
-\title{w_tidy}
+\title{Tidy a pre-specified spatial weights matrix}
 \usage{
 w_tidy(formula, data, id, w)
 }
@@ -11,7 +11,7 @@ w_tidy(formula, data, id, w)
 
 \item{data}{A data frame containing variables to be used in a spatial model}
 
-\item{id}{A unique ID variable that correpsonds to row and column names in W}
+\item{id}{A unique ID variable that corresponds to row and column names in W}
 
 \item{w}{A spatial weights matrix containing observations that
 correspond to data rows with missing values}
@@ -25,12 +25,8 @@ This function tidies a pre-specified spatial weights matrix. Using a unique ID
 from a data frame as well as a model formula, this function subsets an existing W-matrix
 by dropping rows and columns which correspond to missing values in the data.
 }
-\details{
-Tidy a pre-specified spatial weights matrix
-}
 \examples{
 n   <- 20
-
 dat <- data.frame(obs_id = 1:n, x1 = rnorm(n))
 dat$x1[sample(1:20, size = 3)] <- NA
 

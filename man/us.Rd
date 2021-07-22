@@ -3,9 +3,7 @@
 \docType{data}
 \name{us}
 \alias{us}
-\title{us
-
-A simple feature collection of 48 contiguous states}
+\title{A simple feature collection of 48 contiguous states}
 \format{
 A data frame with 48 rows and 1 variable:
 \describe{

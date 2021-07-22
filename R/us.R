@@ -1,5 +1,3 @@
-#' @title us
-#'
 #' A simple feature collection of 48 contiguous states
 #'
 #' @description A dataset containing geometry for 48 contiguous US states.

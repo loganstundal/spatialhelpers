@@ -2,7 +2,7 @@
 % Please edit documentation in R/w_sim.R
 \name{w_sim}
 \alias{w_sim}
-\title{w_sim}
+\title{Simulate a symmetric binary spatial weights matrix}
 \usage{
 w_sim(n, cutoff = 0.2)
 }

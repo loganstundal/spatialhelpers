@@ -2,7 +2,7 @@
 % Please edit documentation in R/w_report.R
 \name{w_report}
 \alias{w_report}
-\title{w_report}
+\title{Report neighbors for an index in a spatial weights matrix}
 \usage{
 w_report(id, w, value = FALSE)
 }

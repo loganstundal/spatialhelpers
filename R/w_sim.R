@@ -1,5 +1,3 @@
-#' w_sim
-#'
 #' Simulate a symmetric binary spatial weights matrix
 #'
 #' @param n The number of observations to include

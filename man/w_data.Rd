@@ -2,7 +2,7 @@
 % Please edit documentation in R/w_data.R
 \name{w_data}
 \alias{w_data}
-\title{w_data}
+\title{Construct a spatial weights matrix using observations in a data frame}
 \usage{
 w_data(
   data,
@@ -42,9 +42,6 @@ A matrix consisting of weights derived from data
 \code{w_data} constructs spatial weights using dyadic
 data recorded in a data frame. These weights may be symmetric or
 asymmetric depending on user preference.
-}
-\details{
-Construct a spatial weights matrix using observations in a data frame
 }
 \examples{
 data(trade)
