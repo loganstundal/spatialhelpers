@@ -22,12 +22,12 @@ devtools::install_github("loganstundal/spatialhelpers")
 
 ## Convenience functions included here
 
--    - constructs spatial weights using border lengths shared between
-    units
--    - constructs spatial weights using dyadic data producing a
+-   `w_borders` - constructs spatial weights using border lengths shared
+    between units
+-   `w_data` - constructs spatial weights using dyadic data producing a
     symmetric matrix for absolute flows between units or an asymmetric
     matrix for relative flows
--    - reports unit neighbors or neighbor values in a w matrix
--    - simulates a spatial weights matrix
--    - uses an R formula to remove elements of a spatial weights matrix
-    corresponding to observations in data with missing values
+-   `w_report` - reports unit neighbors or neighbor values in a w matrix
+-   `w_sim` - simulates a spatial weights matrix
+-   `w_tidy` - uses an R formula to remove elements of a spatial weights
+    matrix corresponding to observations in data with missing values
