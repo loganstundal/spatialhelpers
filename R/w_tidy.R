@@ -1,3 +1,5 @@
+#' w_tidy
+#'
 #' Tidy a pre-specified spatial weights matrix
 #'
 #' @description  This function tidies a pre-specified spatial weights matrix. Using a unique ID
@@ -6,7 +8,7 @@
 #'
 #' @param formula A model formula to identify appropriate observations for subsetting
 #' @param data A data frame containing variables to be used in a spatial model
-#' @param panel_id A unique ID variable that correpsonds to row and column names in W
+#' @param id A unique ID variable that correpsonds to row and column names in W
 #' @param w A spatial weights matrix containing observations that
 #' correspond to data rows with missing values
 #'
@@ -14,13 +16,14 @@
 #' in the supplied formula.
 #' @export
 #'
+#' @importFrom stats model.frame na.action
+#'
 #' @examples
 #' n   <- 20
-#'
 #' dat <- data.frame(obs_id = 1:n, x1 = rnorm(n))
 #' dat$x1[sample(1:20, size = 3)] <- NA
 #'
-#' w   <- gen_w(n)
+#' w   <- w_sim(n)
 #' rownames(w) <- colnames(w) <- dat$obs_id
 #'
 #' w2 <- w_tidy(formula = ~x1,

@@ -1,3 +1,5 @@
+#' w_sim
+#'
 #' Simulate a symmetric binary spatial weights matrix
 #'
 #' @param n The number of observations to include
@@ -5,8 +7,11 @@
 #' neighbors. Observations are sampled in a (-1, 1) grid space. The default
 #' cutoff is a distance of 0.2
 #'
-#' @return
+#' @return A simulated symmetric spatial weights matrix based on sampled
+#' observations from a unit-grid.
 #' @export
+#'
+#' @importFrom stats runif model.frame na.action runif dist
 #'
 #' @examples
 #' w_sim(20)

@@ -2,7 +2,7 @@
 % Please edit documentation in R/w_borders.R
 \name{w_borders}
 \alias{w_borders}
-\title{Compute distance based spatial weights}
+\title{Compute spatial weights based on shared border lengths}
 \usage{
 w_borders(data, id)
 }
@@ -12,10 +12,10 @@ w_borders(data, id)
 \item{id}{A variable in the data uniquely identifying observations}
 }
 \value{
-
+A matrix consisting of shared border lengths between units
 }
 \description{
-Compute distance based spatial weights
+Compute spatial weights based on shared border lengths
 }
 \examples{
 data(us)

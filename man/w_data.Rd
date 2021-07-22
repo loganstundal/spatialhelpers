@@ -10,7 +10,7 @@ w_data(
   id2,
   flow1,
   flow2,
-  flow = NULL,
+  flow,
   missing_list = FALSE,
   quitetly = FALSE
 )
@@ -36,12 +36,19 @@ argument to TRUE returns a list of these observations}
 \item{quitetly}{Suppress warning messages}
 }
 \value{
-
+A matrix consisting of weights derived from data
 }
 \description{
-w_data
+\code{w_data} constructs spatial weights using dyadic
+data recorded in a data frame. These weights may be symmetric or
+asymmetric depending on user preference.
+}
+\details{
+Construct a spatial weights matrix using observations in a data frame
 }
 \examples{
+data(trade)
+head(trade)
 # Construct a symmetric dyadic matrix
 w_symmetric <- w_data(data = trade, id1 = importer1, id2 = importer2,
                       flow = total_trade)

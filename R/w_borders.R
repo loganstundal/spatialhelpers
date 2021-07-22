@@ -1,15 +1,15 @@
-
-
-#' Compute distance based spatial weights
+#' Compute spatial weights based on shared border lengths
 #'
 #' @param data Spatial data of class sf
 #' @param id A variable in the data uniquely identifying observations
 #'
-#' @return
+#' @return A matrix consisting of shared border lengths between units
 #' @export
 #'
 #' @importFrom dplyr %>% select rename mutate
-#' @importFrom sf st_intersection st_drop_geometry
+#' @importFrom rlang .data
+#' @importFrom sf st_intersection st_drop_geometry st_geometry_type st_touches st_length
+#' @importFrom lwgeom st_geod_length
 #'
 #' @examples
 #' data(us)
@@ -48,7 +48,7 @@ w_borders <- function(data, id){
       select(!!id, !!paste0(id, ".1")) %>%
       rename(id_row = !!id,
              id_col = !!paste0(id, ".1")) %>%
-      mutate(border_dist = as.numeric(st_length(.)) / 1e3) %>%
+      mutate(border_dist = as.numeric(st_length(.data[["geometry"]])) / 1e3) %>%
       st_drop_geometry() %>%
       tibble::remove_rownames()
 

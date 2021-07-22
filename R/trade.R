@@ -12,4 +12,8 @@
 #'   ...
 #' }
 #' @source \url{https://data.world/cow/bilateral-trade}
+#'
+#' @examples
+#' data(trade)
+#' head(trade)
 "trade"

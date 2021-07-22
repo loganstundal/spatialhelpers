@@ -2,7 +2,7 @@
 % Please edit documentation in R/w_sim.R
 \name{w_sim}
 \alias{w_sim}
-\title{Simulate a symmetric binary spatial weights matrix}
+\title{w_sim}
 \usage{
 w_sim(n, cutoff = 0.2)
 }
@@ -14,7 +14,8 @@ neighbors. Observations are sampled in a (-1, 1) grid space. The default
 cutoff is a distance of 0.2}
 }
 \value{
-
+A simulated symmetric spatial weights matrix based on sampled
+observations from a unit-grid.
 }
 \description{
 Simulate a symmetric binary spatial weights matrix

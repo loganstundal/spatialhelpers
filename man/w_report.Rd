@@ -2,7 +2,7 @@
 % Please edit documentation in R/w_report.R
 \name{w_report}
 \alias{w_report}
-\title{Report neighbors for an index in a spatial weights matrix}
+\title{w_report}
 \usage{
 w_report(id, w, value = FALSE)
 }
@@ -14,7 +14,7 @@ w_report(id, w, value = FALSE)
 \item{value}{Whether to report weight value, default is False}
 }
 \value{
-
+A vector of neighbor names or recorded neighbor values
 }
 \description{
 Report neighbors for an index in a spatial weights matrix

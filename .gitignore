@@ -39,7 +39,10 @@ vignettes/*.pdf
 .Renviron
 
 # Raw example data files
-data-raw/
+data-raw/cow_trade.csv
 
 # Work-in-progress functions
 R/working/
+
+# Directory containing build() function call script
+build/

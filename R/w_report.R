@@ -1,12 +1,12 @@
-
-
+#' w_report
+#'
 #' Report neighbors for an index in a spatial weights matrix
 #'
 #' @param id Index identifier for unit to report neighbors
 #' @param w A spatial weights index
 #' @param value Whether to report weight value, default is False
 #'
-#' @return
+#' @return A vector of neighbor names or recorded neighbor values
 #' @export
 #'
 #' @examples

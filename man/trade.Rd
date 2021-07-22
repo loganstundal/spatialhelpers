@@ -24,4 +24,8 @@ trade
 \description{
 A dataset containing the bilateral trade between countries in 2001.
 }
+\examples{
+data(trade)
+head(trade)
+}
 \keyword{datasets}
