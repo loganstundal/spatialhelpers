@@ -6,10 +6,9 @@
 #' \describe{
 #'   \item{importer1}{Name of country A}
 #'   \item{importer2}{Name of country B}
-#'   \item{flow1}{Imports of country A from country B in current US millions $}
-#'   \item{flow2}{Imports of country B from Country A in current US millions $}
-#'   \item{total_trade}{Total trade between country A and B}
-#'   ...
+#'   \item{flow1}{Country A imports from country B in current USD (millions)}
+#'   \item{flow2}{Country B imports from Country A in current USD (millions)}
+#'   \item{total_trade}{Total trade (millions current usd) between country A and B}
 #' }
 #' @source \url{https://data.world/cow/bilateral-trade}
 #'
