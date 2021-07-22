@@ -8,8 +8,8 @@
 #' @return
 #' @export
 #'
-#' @importFrom rlang ensym
-#' @importFrom dplyr %>%
+#' @importFrom dplyr %>% select rename mutate
+#' @importFrom sf st_intersection st_drop_geometry
 #'
 #' @examples
 #' data(us)

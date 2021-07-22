@@ -37,3 +37,9 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+# Raw example data files
+data-raw/
+
+# Work-in-progress functions
+R/working/

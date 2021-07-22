@@ -2,17 +2,17 @@
 #'
 #' @param n The number of observations to include
 #' @param cutoff A threshold above which observations are no longer considered
-#' neighbors. Observations are sampled in a (-1, 1) space. The default cutoff
-#' is 0.2
+#' neighbors. Observations are sampled in a (-1, 1) grid space. The default
+#' cutoff is a distance of 0.2
 #'
 #' @return
 #' @export
 #'
 #' @examples
-#' w_gen(20)
+#' w_sim(20)
 
 
-w_gen <- function(n, cutoff = 0.2){
+w_sim <- function(n, cutoff = 0.2){
   cords <- cbind(x = runif(n, -1, 1),
                  y = runif(n, -1, 1))
   w <- as.matrix(dist(cords))
