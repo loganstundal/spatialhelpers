@@ -39,7 +39,7 @@ vignettes/*.pdf
 .Renviron
 
 # Raw example data files
-data-raw/cow_trade.csv
+data-raw/*.csv
 
 # Work-in-progress functions
 R/working/

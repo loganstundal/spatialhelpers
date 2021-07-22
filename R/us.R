@@ -4,6 +4,7 @@
 #'
 #' @format A data frame with 48 rows and 1 variable:
 #' \describe{
+#'   \item{fips}{Unique state FIPS code}
 #'   \item{name}{State name}
 #'   \item{geometry}{Spatial geometry}
 #' }

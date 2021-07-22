@@ -6,6 +6,7 @@ us <- us %>%
   janitor::clean_names() %>%
   filter(!name %in% c("Alaska","Hawaii",
                       "Puerto Rico", "District of Columbia")) %>%
-  select(name)
+  rename(fips = statefp) %>%
+  select(fips, name)
 
 usethis::use_data(us, overwrite = TRUE)
