@@ -15,10 +15,15 @@
 #' w_sim(20)
 
 
-w_sim <- function(n, cutoff = 0.2){
+w_sim <- function(n, cutoff = NULL){
   cords <- cbind(x = runif(n, -1, 1),
                  y = runif(n, -1, 1))
   w <- as.matrix(dist(cords))
+
+  if(is.null(cutoff)){
+    cutoff <- min(w[w>0])
+  }
+
   w[w <= cutoff] <- 1
   w[w != 1.0]    <- 0
 
